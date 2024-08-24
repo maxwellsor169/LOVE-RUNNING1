@@ -45,7 +45,9 @@ main {background-color: lightblue;
     flex: 1 0 auto; 
     margin-top: 47px;}
 /* Footer */
-footer {background-color: orange;}
+#social-networks {text-align: center; padding: 20px 0; justify-content: space-evenly; display: flex; list-style-type: none;}
+
+#social-networks i {font-size: 160%; padding: 5%; color: #3a3a3a;}
 
 /* Media Queries */
 @media screen and (min-width: 768px) {
