@@ -59,5 +59,11 @@ footer {background-color: orange;}
     #menu {display: flex;}
     #menu > li {padding-left: 1rem;}
     .nav-toogle-label {display: none;}
+    logo {font-size: 200%; line-height: 75px; margin: 0 0.5rem;}
+    main {margin-top: 79px;}
+}
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover{border-bottom: 1px solid #3a3a3a;}    
 }
 
