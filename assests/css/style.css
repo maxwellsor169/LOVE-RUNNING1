@@ -71,6 +71,33 @@ main {
 
     #cover-text > h2, #cover-text > h3 {color: #ffffff;}
 
+    /* Reasons Section */
+
+    #reasons {font-size: 280%; margin-bottom: 20px; padding-left: 20px; padding-right: 20px; justify-content: center;}
+    #reasons h2 {width: 90%; height: 280%; margin: auto;}
+
+    /* Physical Benefits */
+
+    #physical > h3 {height: 20px; font-size: 50%; margin-bottom: 15px;}
+
+    #physical > p {border-top: 1.5px solid #3a3a3a; 
+        padding: 5px 0; 
+        font-size: 35%; width: 80%; 
+        margin-bottom: 20px; 
+        line-height: 20px; 
+        padding-left: 20px; 
+        padding-right: 20px;}
+
+    /* Mental Benefits */
+    #mental > h3 {height: 20px; font-size: 50%; margin-bottom: 15px;}
+
+    #mental > p {border-top: 1.5px solid #3a3a3a; 
+        padding: 5px 0; 
+        font-size: 35%; 
+        width: 80%; 
+        margin-bottom: 20px; 
+        line-height: 20px; padding-left: 20px; padding-right: 20px;}
+
 /* Footer */
 #social-networks {text-align: center; padding: 20px 0; justify-content: space-evenly; display: flex; list-style-type: none;}
 
