@@ -3,7 +3,15 @@
 
 * {padding: 0; margin: 0; box-sizing: border-box;}
 
-body {min-height: 100vh; display: flex; flex-direction: column; color: 3a3a3a; font-family: 'Lato', sans-serif;}
+body {min-height: 100vh; display: flex; 
+    flex-direction: column; 
+    color: 3a3a3a; 
+    font-family: 'Lato', sans-serif;}
+
+h1, h2, h3 {font-family: 'Oswald', sans-serif; 
+    text-transform: uppercase; 
+    color: #252525;}
+
 /* Header */
 header {background-color: #ffffff; 
     padding: 0 1rem; 
@@ -17,6 +25,7 @@ header {background-color: #ffffff;
 }
 
 header a {text-decoration: none; color: inherit;}
+
 #menu {font-size: 110%; letter-spacing: 4px; list-style-type: none;}
 
 #menu > li {margin-bottom: 1em;}
@@ -39,14 +48,28 @@ nav {position: absolute;
 .nav-toogle-label {font-size: 2rem;}
 
 #nav-toogle:checked~nav {display: block;}
-h1 {font-family: 'Oswald', sans-serif; text-transform: uppercase; color: #252525;}
+
 /* Main Content */
 main {
     flex: 1 0 auto; 
     margin-top: 47px;}
 
     /* Hero Image */
-#hero {height: 600px; width: 100%; background: url(../images/hero-image.webp) no-repeat center center/cover;}    
+#hero {height: 600px; width: 100%; 
+    background: url(../images/hero-image.webp) no-repeat center center/cover; 
+    position: relative;} 
+
+/* Final rgba value set*/
+#cover-text {background-color: rgba(241, 109, 107, .7); 
+    font-size: 130%; 
+    position: absolute; 
+    bottom: 30px; 
+    width: 80%; 
+    min-height: 200px; 
+    padding-top: 40px; 
+    padding-left: 10px;}
+
+    #cover-text > h2, #cover-text > h3 {color: #ffffff;}
 
 /* Footer */
 #social-networks {text-align: center; padding: 20px 0; justify-content: space-evenly; display: flex; list-style-type: none;}
@@ -62,11 +85,19 @@ main {
         box-shadow: none;
         position: relative;
     }
+
     #menu {display: flex;}
+
     #menu > li {padding-left: 1rem;}
+
     .nav-toogle-label {display: none;}
+
     logo {font-size: 200%; line-height: 75px; margin: 0 0.5rem;}
+
     main {margin-top: 79px;}
+
+    /* Hero */
+    #cover-text {width: 300px; right: 50px;}
 }
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
