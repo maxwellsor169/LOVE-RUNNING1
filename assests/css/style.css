@@ -73,30 +73,16 @@ main {
 
     /* Reasons Section */
 
-    #reasons {font-size: 280%; margin-bottom: 20px; padding-left: 20px; padding-right: 20px; justify-content: center;}
-    #reasons h2 {width: 90%; height: 280%; margin: auto;}
+    #reasons {width: 90%; margin: 20px auto;}
+    #reasons h2 {text-align: center; font-size: 280%; margin-bottom: 20px;}
 
     /* Physical Benefits */
 
-    #physical > h3 {height: 20px; font-size: 50%; margin-bottom: 15px;}
+    #benefits-physical > div, #benefits-mental > div {line-height: 20px; margin-bottom: 20px;}
 
-    #physical > p {border-top: 1.5px solid #3a3a3a; 
-        padding: 5px 0; 
-        font-size: 35%; width: 80%; 
-        margin-bottom: 20px; 
-        line-height: 20px; 
-        padding-left: 20px; 
-        padding-right: 20px;}
+    #benefits p {padding: 0 20px;}
 
-    /* Mental Benefits */
-    #mental > h3 {height: 20px; font-size: 50%; margin-bottom: 15px;}
-
-    #mental > p {border-top: 1.5px solid #3a3a3a; 
-        padding: 5px 0; 
-        font-size: 35%; 
-        width: 80%; 
-        margin-bottom: 20px; 
-        line-height: 20px; padding-left: 20px; padding-right: 20px;}
+    hr {border-top: 1px solid #3a3a3a; margin: 5px 0;}
 
         /* Reasons Image */
 
@@ -139,9 +125,32 @@ main {
 
     /* Hero */
     #cover-text {width: 300px; right: 50px;}
+
+    #benefits-physical, #benefits-mental {display: flex; flex-direction: column; width: 100%;}
+
+    #benefits-physical > div, #benefits-mental > div {width: 75%;}
+
+    #benefits-mental > div {text-align: end; align-self: flex-end;}
 }
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover{border-bottom: 1px solid #3a3a3a;}    
+}
+
+/* Larger devices (desktops and larger screens, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    #benefits {display: flex; flex-direction: row;}
+
+    #benefits > div {flex: 1;}
+
+
+    #benefits-mental > div {align-self: flex-start;}
+
+    #benefits-image {order: 0;}
+
+    #benefits-mental {order: 1;}
+
+    #benefits-physical > div {align-self: flex-end;}
+    
 }
 
