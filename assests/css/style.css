@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 * {padding: 0; margin: 0; box-sizing: border-box;}
-
+/* General */
 body {min-height: 100vh; display: flex; 
     flex-direction: column; 
     color: 3a3a3a; 
@@ -11,6 +11,8 @@ body {min-height: 100vh; display: flex;
 h1, h2, h3 {font-family: 'Oswald', sans-serif; 
     text-transform: uppercase; 
     color: #252525;}
+
+    .hidden-heading {display: none;}
 
 /* Header */
 header {background-color: #ffffff; 
