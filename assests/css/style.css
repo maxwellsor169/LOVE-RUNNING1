@@ -130,7 +130,13 @@ main {
 
 #social-networks i {font-size: 160%; padding: 5%; color: #3a3a3a;}
 
-/* Media Queries */
+/* Media Queries For large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {column-count: 2; column-gap: 0;}
+    
+}
+
+/* Media Queries For Tablets */
 @media screen and (min-width: 768px) {
 
     nav {display: block;
@@ -158,10 +164,16 @@ main {
     #benefits-physical > div, #benefits-mental > div {width: 75%;}
 
     #benefits-mental > div {text-align: end; align-self: flex-end;}
+
+     /* Gallery */
+    #photos {column-count: 3;}
 }
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-    #menu a:hover{border-bottom: 1px solid #3a3a3a;}    
+    #menu a:hover{border-bottom: 1px solid #3a3a3a;}   
+    
+    /* Gallery */
+    #photos {column-count: 4;}
 }
 
 /* Larger devices (desktops and larger screens, 1200px and up) */
