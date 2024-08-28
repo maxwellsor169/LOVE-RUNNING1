@@ -119,6 +119,12 @@ main {
     }
     #times h3 {color: #fafafa;}
 
+    /* Gallery Images */
+
+    #photos img {width: 100%; line-height: 1em;}
+
+    #photos {line-height: 0;}
+
 /* Footer */
 #social-networks {text-align: center; padding: 20px 0; justify-content: space-evenly; display: flex; list-style-type: none;}
 
