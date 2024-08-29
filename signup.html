@@ -34,15 +34,33 @@
         <section id="signup">
                 <form id="signup-form" action="https://formdump.codeinstitute.net" method="POST">
                 <fieldset>
-                    <legend><h2>LET'S GET YOU SIGNED UP!</h2></legend>
+                    <h2>LET'S GET YOU SIGNED UP!</h2>
                     <div>
                         <div>
-                            <label for="first-name" class="block-label">First Name</label>
-                            <input type="text" name="first-name" id="first-name">
-                            <label for="last-name" class="block-label">Last Name</label>
-                            <input type="text" name="last-name" id="last-name">
-                            <label for="email-address" class="block-label">Email Address</label>
-                            <input type="text" name="email-address" id="email-address">
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="first_name" id="first-name" class="text-input" required>
+                            <br>
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="last-name" id="last-name" class="text-input" required>
+                            <br>
+                            <label for="email-address">Email Address</label>
+                            <input type="text" name="email-address" id="email-address" class="text-input" required>
+                            <br>
+                        </div>
+                        <div class="radio-buttons">
+                            <div>
+                            <label for="road">Road</label>
+                            <input type="radio" name="running_preference" value="road" id="road" required checked>
+                            </div>
+                            <div>
+                            <label for="trail">Trail</label>
+                            <input type="radio" name="trail" value="trail" id="trail">
+                            </div
+                            <div>
+                            <label for="both">Both</label>
+                            <input type="radio" value="both" name="both" id="both">
+                            </div>
+                            <button type="submit" class="join-button">Let's Run!</button>
                         </div>
                     </div>
                 </fieldset>
